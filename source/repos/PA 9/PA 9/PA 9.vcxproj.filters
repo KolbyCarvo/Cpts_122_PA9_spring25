@@ -39,6 +39,9 @@
     <ClCompile Include="knight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="knight.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="piece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="position.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
