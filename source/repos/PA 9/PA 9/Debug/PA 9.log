@@ -1,30 +1,198 @@
-﻿  functions.cpp
+﻿  bishop.cpp
+  board.cpp
 C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'functions.cpp')
+  (compiling source file 'bishop.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
       see declaration of 'std::runtime_error'
       C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(6,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,52): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,52): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,52): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,52): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,41): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,41): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,41): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,41): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(223,41): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,82): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,82): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,82): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,82): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,61): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,61): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,61): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\functions.cpp(224,61): warning C4244:         ]
-  PA 9.vcxproj -> C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\Debug\PA 9.exe
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'bishop.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'board.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(13,10): error C3646: 'white_pawns': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(13,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(14,10): error C3646: 'white_rooks': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(14,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(15,12): error C3646: 'white_knights': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(15,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(16,12): error C3646: 'white_bishops': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(16,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(17,8): error C3646: 'white_queen': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(17,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(18,7): error C3646: 'white_king': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(18,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(20,10): error C3646: 'black_pawns': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(20,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(21,10): error C3646: 'black_rooks': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(21,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(22,12): error C3646: 'black_knights': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(22,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(23,12): error C3646: 'black_bishops': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(23,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(24,8): error C3646: 'black_queen': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(24,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(25,7): error C3646: 'black_king': unknown override specifier
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.h(25,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'board.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(5,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,58): warning C4244:         with
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,58): warning C4244:         [
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,58): warning C4244:             T=float
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,58): warning C4244:         ]
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,47): warning C4244:         with
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,47): warning C4244:         [
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,47): warning C4244:             T=float
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(222,47): warning C4244:         ]
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,88): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,88): warning C4244:         with
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,88): warning C4244:         [
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,88): warning C4244:             T=float
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,88): warning C4244:         ]
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,67): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,67): warning C4244:         with
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,67): warning C4244:         [
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,67): warning C4244:             T=float
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\board.cpp(223,67): warning C4244:         ]
+  king.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'king.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'king.cpp')
+  
+  main.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(1,10): error C1083: Cannot open include file: 'Header.h': No such file or directory
+  knight.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'knight.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'knight.cpp')
+  
+  pawn.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'pawn.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'pawn.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\pawn.cpp(3,16): error C2512: 'sf::Sprite': no appropriate default constructor available
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\Graphics\Sprite.hpp(50,25):
+      see declaration of 'sf::Sprite'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\pawn.cpp(10,68): error C2512: 'sf::Sprite': no appropriate default constructor available
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\Graphics\Sprite.hpp(50,25):
+      see declaration of 'sf::Sprite'
+  
+  piece.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'piece.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'piece.cpp')
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.cpp(3,16): error C2512: 'sf::Sprite': no appropriate default constructor available
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\Graphics\Sprite.hpp(50,25):
+      see declaration of 'sf::Sprite'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.cpp(10,68): error C2512: 'sf::Sprite': no appropriate default constructor available
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\Graphics\Sprite.hpp(50,25):
+      see declaration of 'sf::Sprite'
+  
+  position.cpp
+  queen.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'queen.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'queen.cpp')
+  
+  rook.cpp
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'rook.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\piece.h(33,4): error C2014: preprocessor command must start as first nonwhite space
+  (compiling source file 'rook.cpp')
+  
+  Generating Code...
