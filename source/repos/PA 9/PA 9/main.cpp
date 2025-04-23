@@ -7,7 +7,7 @@ int main(void)
 
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
 	window->setFramerateLimit(15);
-	char turn = 'b';
+	char turn = 'w';
 	int temp_scale = 1;
 	piece* selected_piece = nullptr;
 	board chessboard(window);
@@ -482,6 +482,90 @@ int main(void)
 							turn = (turn == 'w') ? 'b' : 'w';
 							selected_piece->setClicked(-1);
 							selected_piece->getSprite().setScale({ 0.6f, 0.6f });
+							for (int i = 0; i < 8; i++)
+							{
+								if (selected_piece->getColor() == 'w')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(black_pawns[i].getPosition()))
+									{
+										black_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_pawns[i].setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+								else if (selected_piece->getColor() == 'b')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(white_pawns[i].getPosition()))
+									{
+										white_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_pawns[i].setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+							}
+							for (int i = 0; i < 2; i++)
+							{
+								if (selected_piece->getColor() == 'w')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(black_rooks[i].getPosition()))
+									{
+										black_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_rooks[i].setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(black_knights[i].getPosition()))
+									{
+										black_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_knights[i].setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(black_bishops[i].getPosition()))
+									{
+										black_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_bishops[i].setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+								else if (selected_piece->getColor() == 'b')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(white_rooks[i].getPosition()))
+									{
+										white_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_rooks[i].setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(white_knights[i].getPosition()))
+									{
+										white_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_knights[i].setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(white_bishops[i].getPosition()))
+									{
+										white_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_bishops[i].setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+								if (selected_piece->getColor() == 'w')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(black_queens.getPosition()))
+									{
+										black_queens.getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_queens.setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(black_kings.getPosition()))
+									{
+										black_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
+										black_kings.setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+								else if (selected_piece->getColor() == 'b')
+								{
+									if (selected_piece->getSprite().getGlobalBounds().contains(white_queens.getPosition()))
+									{
+										white_queens.getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_queens.setPosition({ -1000.0f, -1000.0f });
+									}
+									else if (selected_piece->getSprite().getGlobalBounds().contains(white_kings.getPosition()))
+									{
+										white_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
+										white_kings.setPosition({ -1000.0f, -1000.0f });
+									}
+								}
+							}
 							selected_piece = nullptr;
 						}
 					}
