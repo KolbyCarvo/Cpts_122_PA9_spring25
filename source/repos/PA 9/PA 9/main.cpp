@@ -7,7 +7,7 @@ int main(void)
 
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
 	window->setFramerateLimit(30);
-
+	char turn = 'w';
 	board chessboard(window);
 
 	sf::Texture white_pawn_texture, white_rook_texture, white_knight_texture, white_bishop_texture, white_queen_texture, white_king_texture;
@@ -201,6 +201,230 @@ int main(void)
 				{
 					window->close();
 				}
+			}
+			else if (const auto* mousePressed = event->getIf<sf::Event::MouseButtonPressed>())
+			{
+
+				sf::Vector2i mousePixel = sf::Mouse::getPosition(*window);
+				sf::Vector2f mouseWorld = window->mapPixelToCoords(mousePixel);
+
+				if (turn == 'w')
+				{
+					for (int i = 0; i < 8; i++) {
+						white_pawns[i].setClicked(-1);
+						white_pawns[i].getSprite().setScale({ 0.6f, 0.6f });
+					}
+					for (int i = 0; i < 2; i++) {
+						white_rooks[i].setClicked(-1);
+						white_rooks[i].getSprite().setScale({ 0.6f, 0.6f });
+
+						white_bishops[i].setClicked(-1);
+						white_bishops[i].getSprite().setScale({ 0.6f, 0.6f });
+
+						white_knights[i].setClicked(-1);
+						white_knights[i].getSprite().setScale({ 0.6f, 0.6f });
+					}
+					white_queens.setClicked(-1);
+					white_queens.getSprite().setScale({ 0.6f, 0.6f });
+
+					white_kings.setClicked(-1);
+					white_kings.getSprite().setScale({ 0.6f, 0.6f });
+
+					if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+					{
+						for (int i = 0; i < 8; i++)
+						{
+							if (white_pawns[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								white_pawns[i].setClicked(-white_pawns[i].getclicked());
+
+								if (white_pawns[i].getclicked() == 1)
+								{
+									white_pawns[i].getSprite().setScale({ 0.7f,0.7f });
+								}
+								else if (white_pawns[i].getclicked() == -1)
+								{
+									white_pawns[i].getSprite().setScale({ 0.6f,0.6f });
+								}
+							}
+						}
+						for (int i = 0; i < 2; i++)
+						{
+							if (white_rooks[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								white_rooks[i].setClicked(-white_rooks[i].getclicked());
+
+								if (white_rooks[i].getclicked() == 1)
+								{
+									white_rooks[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (white_rooks[i].getclicked() == -1)
+								{
+									white_rooks[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+							if (white_bishops[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								white_bishops[i].setClicked(-white_bishops[i].getclicked());
+
+								if (white_bishops[i].getclicked() == 1)
+								{
+									white_bishops[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (white_bishops[i].getclicked() == -1)
+								{
+									white_bishops[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+							if (white_knights[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								white_knights[i].setClicked(-white_knights[i].getclicked());
+
+								if (white_knights[i].getclicked() == 1)
+								{
+									white_knights[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (white_knights[i].getclicked() == -1)
+								{
+									white_knights[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+						}
+						if (white_queens.getSprite().getGlobalBounds().contains(mouseWorld))
+						{
+							white_queens.setClicked(-white_queens.getclicked());
+							if (white_queens.getclicked() == 1)
+							{
+								white_queens.getSprite().setScale({ 0.7f, 0.7f });
+							}
+							else if (white_queens.getclicked() == -1)
+							{
+								white_queens.getSprite().setScale({ 0.6f, 0.6f });
+							}
+						}
+						if (white_kings.getSprite().getGlobalBounds().contains(mouseWorld))
+						{
+							white_kings.setClicked(-white_kings.getclicked());
+							if (white_kings.getclicked() == 1)
+							{
+								white_kings.getSprite().setScale({ 0.7f, 0.7f });
+							}
+							else if (white_kings.getclicked() == -1)
+							{
+								white_kings.getSprite().setScale({ 0.6f, 0.6f });
+							}
+						}
+					}
+				}
+				if (turn == 'b')
+				{
+					for (int i = 0; i < 8; i++) {
+						black_pawns[i].setClicked(-1);
+						black_pawns[i].getSprite().setScale({ 0.6f, 0.6f });
+					}
+					for (int i = 0; i < 2; i++) {
+						black_rooks[i].setClicked(-1);
+						black_rooks[i].getSprite().setScale({ 0.6f, 0.6f });
+
+						black_bishops[i].setClicked(-1);
+						black_bishops[i].getSprite().setScale({ 0.6f, 0.6f });
+
+						black_knights[i].setClicked(-1);
+						black_knights[i].getSprite().setScale({ 0.6f, 0.6f });
+					}
+					black_queens.setClicked(-1);
+					black_queens.getSprite().setScale({ 0.6f, 0.6f });
+
+					black_kings.setClicked(-1);
+					black_kings.getSprite().setScale({ 0.6f, 0.6f });
+
+					if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+					{
+						for (int i = 0; i < 8; i++)
+						{
+							if (black_pawns[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								black_pawns[i].setClicked(-black_pawns[i].getclicked());
+
+								if (black_pawns[i].getclicked() == 1)
+								{
+									black_pawns[i].getSprite().setScale({ 0.7f,0.7f });
+								}
+								else if (black_pawns[i].getclicked() == -1)
+								{
+									black_pawns[i].getSprite().setScale({ 0.6f,0.6f });
+								}
+							}
+						}
+						for (int i = 0; i < 2; i++)
+						{
+							if (black_rooks[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								black_rooks[i].setClicked(-black_rooks[i].getclicked());
+
+								if (black_rooks[i].getclicked() == 1)
+								{
+									black_rooks[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (black_rooks[i].getclicked() == -1)
+								{
+									black_rooks[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+							if (black_bishops[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								black_bishops[i].setClicked(-black_bishops[i].getclicked());
+
+								if (black_bishops[i].getclicked() == 1)
+								{
+									black_bishops[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (black_bishops[i].getclicked() == -1)
+								{
+									black_bishops[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+							if (black_knights[i].getSprite().getGlobalBounds().contains(mouseWorld))
+							{
+								black_knights[i].setClicked(-black_knights[i].getclicked());
+
+								if (black_knights[i].getclicked() == 1)
+								{
+									black_knights[i].getSprite().setScale({ 0.7f, 0.7f });
+								}
+								else if (black_knights[i].getclicked() == -1)
+								{
+									black_knights[i].getSprite().setScale({ 0.6f, 0.6f });
+								}
+							}
+						}
+						if (black_queens.getSprite().getGlobalBounds().contains(mouseWorld))
+						{
+							black_queens.setClicked(-black_queens.getclicked());
+							if (black_queens.getclicked() == 1)
+							{
+								black_queens.getSprite().setScale({ 0.7f, 0.7f });
+							}
+							else if (black_queens.getclicked() == -1)
+							{
+								black_queens.getSprite().setScale({ 0.6f, 0.6f });
+							}
+						}
+						if (black_kings.getSprite().getGlobalBounds().contains(mouseWorld))
+						{
+							black_kings.setClicked(-black_kings.getclicked());
+							if (black_kings.getclicked() == 1)
+							{
+								black_kings.getSprite().setScale({ 0.7f, 0.7f });
+							}
+							else if (black_kings.getclicked() == -1)
+							{
+								black_kings.getSprite().setScale({ 0.6f, 0.6f });
+							}
+						}
+					}
+				}
+
 			}
 		}
 
