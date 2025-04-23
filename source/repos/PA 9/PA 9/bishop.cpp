@@ -1,22 +1,44 @@
 #include "bishop.h"
 
-void bishop::move(int type, int scale)
+void bishop::move(int type, int& scale)
 {
-	switch (type)
+	if (color == 'w')
 	{
-	case (1): // Up-Left
-		sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
-		break;
-	case (2): // Up-Right
-		sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
-		break;
-	case (3): // Down-Left
-		sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
-		break;
-	case (4): // Down-Right
-		sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
-		break;
+		switch (type)
+		{
+		case (1): // Up-Left
+			sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
+			break;
+		case (2): // Up-Right
+			sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
+			break;
+		case (3): // Down-Left
+			sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
+			break;
+		case (4): // Down-Right
+			sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
+			break;
+		}
 	}
+	else if (color == 'b')
+	{
+		switch (type)
+		{
+		case (1): // Up-Left
+			sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
+			break;
+		case (2): // Up-Right
+			sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y + scale * 113.0f });
+			break;
+		case (3): // Down-Left
+			sprite.setPosition({ sprite.getPosition().x + scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
+			break;
+		case (4): // Down-Right
+			sprite.setPosition({ sprite.getPosition().x - scale * 113.0f, sprite.getPosition().y - scale * 113.0f });
+			break;
+		}
+	}
+	pos = sprite.getPosition();
 }
 
 
@@ -28,27 +50,47 @@ int bishop::determine_move(sf::Vector2f next_position, int& scale)
 	if (std::abs(difference_x) == std::abs(difference_y)) 
 	{
 		scale = std::abs(difference_x);
-
-		if (difference_x < 0 && difference_y < 0)
+		if (color == 'w')
 		{
-			return 1; // Up-Left
+			if (difference_x < 0 && difference_y < 0)
+			{
+				return 1; // Up-Left
+			}
+			else if (difference_x > 0 && difference_y < 0)
+			{
+				return 2; // Up-Right
+			}
+			else if (difference_x < 0 && difference_y > 0)
+			{
+				return 3; // Down-Left
+			}
+			else if (difference_x > 0 && difference_y > 0)
+			{
+				return 4; // Down-Right
+			}
 		}
-		else if (difference_x > 0 && difference_y < 0)
+		else if (color == 'b')
 		{
-			return 2; // Up-Right
-		}
-		else if (difference_x < 0 && difference_y > 0)
-		{
-			return 3; // Down-Left
-		}
-		else if (difference_x > 0 && difference_y > 0)
-		{
-			return 4; // Down-Right
+			if (difference_x > 0 && difference_y > 0)
+			{
+				return 1; // Up-Left
+			}
+			else if (difference_x < 0 && difference_y > 0)
+			{
+				return 2; // Up-Right
+			}
+			else if (difference_x > 0 && difference_y < 0)
+			{
+				return 3; // Down-Left
+			}
+			else if (difference_x < 0 && difference_y < 0)
+			{
+				return 4; // Down-Right
+			}
 		}
 	}
-	else// Invalid move
-	{
-		scale = 0;
-		return 0;
-	}
+	// Invalid move
+	
+	scale = 1;
+	return 0;
 }
