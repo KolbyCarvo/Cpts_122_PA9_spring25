@@ -1,31 +1,21 @@
-#pragma once
-
-#include <iostream>
 #include <SFML/Graphics.hpp>
+#include <memory>
 
-class piece {
+enum class PieceColor { WHITE, BLACK, NONE };
+enum class PieceType { PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING, NONE };
 
-protected:
-
-	char color;
-
-	sf::Vector2f pos;
-
+class piece : public sf::Sprite {
 public:
+    piece(PieceColor color, PieceType type, sf::Texture& texture, float scale = 0.6f);
 
-	//piece();
-	//piece(char newColor, sf::Vector2f newPos);
-	//~piece();
+    void setBoardPosition(int row, int col, const sf::Vector2f& tileSize);
 
-	//char getColor() const;
-	//sf::Vector2f getPosition() const;
+    PieceColor getColor() const;
+    PieceType getType() const;
+    sf::Vector2i getBoardPosition() const;
 
-	//void setColor(char newColor);
-	//void setPosition(sf::Vector2f newPosition);
-
-	//virtual void getMove() const = 0;
-	//virtual int checkMove() const = 0;
-
-	//virtual void move() const = 0;
-
+private:
+    PieceColor color;
+    PieceType type;
+    sf::Vector2i boardPosition;
 };

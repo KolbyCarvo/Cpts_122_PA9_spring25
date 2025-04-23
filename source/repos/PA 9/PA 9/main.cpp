@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	unsigned int width = 1006;
-	unsigned int height = 1006;
+	unsigned int width = 906;
+	unsigned int height = 906;
 
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
 	window->setFramerateLimit(60);
@@ -235,7 +235,7 @@ int main(void)
 		{
 			for (int col = 0; col < 8; col++)
 			{
-				window->draw(chessboard.get_board(row,col));
+				window->draw(chessboard.get_board(row, col));
 			}
 		}
 

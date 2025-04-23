@@ -8,9 +8,62 @@ int king::checkMove() const {
 	return 0;
 }
 
-void king::move() {
+void king::move(int moveChoice) {
 
-	// move piece to selected square
-	// remove piece if captured
+	if (moveChoice == 1) {
+
+		piece.setPosition({ piece.getPosition().x, piece.getPosition().y + 113.0f });
+		return;
+
+	}
+
+	if (moveChoice == 2) {
+
+		piece.setPosition({ piece.getPosition().x + 113.0f, piece.getPosition().y + 113.0f });
+		return;
+
+	}
+
+	if (moveChoice == 3) {
+
+		piece.setPosition({ piece.getPosition().x + 113.0f, piece.getPosition().y });
+		return;
+
+	}
+
+	if (moveChoice == 4) {
+
+		piece.setPosition({ piece.getPosition().x + 113.0f, piece.getPosition().y - 113.0f });
+		return;
+
+	}
+
+	if (moveChoice == 5) {
+
+		piece.setPosition({ piece.getPosition().x, piece.getPosition().y - 113.0f });
+		return;
+
+	}
+
+	if (moveChoice == 6) {
+
+		piece.setPosition({ piece.getPosition().x - 113.0f, piece.getPosition().y - 113.0f });
+		return;
+
+	}
+
+	if (moveChoice == 7) {
+
+		piece.setPosition({ piece.getPosition().x - 113.0f, piece.getPosition().y });
+		return;
+
+	}
+
+	if (moveChoice == 8) {
+
+		piece.setPosition({ piece.getPosition().x - 113.0f, piece.getPosition().y + 113.0f });
+		return;
+
+	}
 
 }

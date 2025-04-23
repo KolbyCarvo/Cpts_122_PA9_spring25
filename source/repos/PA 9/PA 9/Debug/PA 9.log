@@ -1,9 +1,88 @@
-﻿  main.cpp
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'main.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdexcept(100,19):
+﻿  bishop.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'bishop.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
       see declaration of 'std::runtime_error'
-      C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-  PA 9.vcxproj -> C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\Debug\PA 9.exe
+  board.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'board.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(5,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,58): warning C4244:         with
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,58): warning C4244:         [
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,58): warning C4244:             T=float
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,58): warning C4244:         ]
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,47): warning C4244:         with
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,47): warning C4244:         [
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,47): warning C4244:             T=float
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(11,47): warning C4244:         ]
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,88): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,88): warning C4244:         with
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,88): warning C4244:         [
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,88): warning C4244:             T=float
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,88): warning C4244:         ]
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,67): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,67): warning C4244:         with
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,67): warning C4244:         [
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,67): warning C4244:             T=float
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\PA 9\board.cpp(12,67): warning C4244:         ]
+  king.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'king.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  knight.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'knight.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  main.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  pawn.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'pawn.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  piece.cpp
+  queen.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'queen.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  rook.cpp
+C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'rook.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  Generating Code...
+  PA 9.vcxproj -> C:\Users\csiri\OneDrive\Desktop\CPT S 122\PA\Cpts_122_PA9_spring25\source\repos\PA 9\Debug\PA 9.exe

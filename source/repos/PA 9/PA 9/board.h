@@ -18,4 +18,3 @@ public:
 private:
 	sf::RectangleShape chess_board[8][8];
 };
-

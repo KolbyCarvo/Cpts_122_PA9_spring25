@@ -9,6 +9,6 @@ public:
 
 	int checkMove() const;
 
-	void move();
+	void move(int moveChoice);
 
 };

@@ -1,65 +1,51 @@
-//#include "piece.h"
-//
-//piece::piece()
-//{
-//	color = '\0';
-//	pos = sf::Vector2f();
-//}
-//
-//piece::piece(char newColor, sf::Vector2f newPos)
-//{
-//	color = newColor;
-//	pos = newPos;
-//}
-//	
-//piece::~piece() {
-//
-//
-//
-//}
-//
-//char piece::getColor() const {
-//
-//	return color;
-//
-//}
-//
-//sf::Vector2f piece::getPosition() const {
-//
-//	return pos;
-//}
-//
-//void piece::setColor(char newColor) {
-//
-//	this->color = newColor;
-//
-//}
-//
-//void piece::setPosition(sf::Vector2f newPosition) {
-//
-//	this->pos = newPosition;
-//
-//}
-//
-//void piece::getMove() const {
-//
-//	// waits for player to select piece
-//	// highlights available squares
-//	// wait for player to select available square using checkMove function
-//	// adjust capture value for piece if square is occupied by moving piece
-//
-//}
-//
-//int piece::checkMove() const {
-//
-//	// check the square that the player clicks on
-//	return 0;
-//}
-//
-//void piece::move() {
-//
-//	// adjust piece coordinate values
-//	// animate piece moving
-//	// check if any pieces are captured, remove if true
-//
-//}
+#include "piece.h"
+#include <iostream>
+
+piece::piece(PieceColor color, PieceType type, sf::Texture& texture, float scale)
+    : color(color), type(type), boardPosition(-1, -1) // Initialize with invalid position
+{
+    setTexture(texture);
+    setScale(scale, scale);
+
+    // Set origin to center of the sprite for better positioning
+    sf::FloatRect bounds = getLocalBounds();
+    setOrigin(bounds.width / 2, bounds.height / 2);
+}
+
+// Sets the board position and calculates pixel position
+void piece::setBoardPosition(int row, int col, const sf::Vector2f& tileSize)
+{
+    // Validate input
+    if (row < 0 || row > 7 || col < 0 || col > 7) {
+        std::cerr << "Warning: Invalid board position (" << row << ", " << col << ")\n";
+        return;
+    }
+
+    // Store board coordinates
+    boardPosition.x = col;
+    boardPosition.y = row;
+
+    // Calculate pixel position (center of the tile)
+    float pixelX = col * tileSize.x + tileSize.x / 2;
+    float pixelY = row * tileSize.y + tileSize.y / 2;
+
+    setPosition(pixelX, pixelY);
+}
+
+// Getter for piece color
+PieceColor piece::getColor() const
+{
+    return color;
+}
+
+// Getter for piece type
+PieceType piece::getType() const
+{
+    return type;
+}
+
+// Getter for board position
+sf::Vector2i piece::getBoardPosition() const
+{
+    return boardPosition;
+}
