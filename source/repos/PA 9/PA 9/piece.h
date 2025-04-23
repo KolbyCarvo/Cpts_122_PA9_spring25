@@ -11,9 +11,10 @@ protected:
 	sf::Sprite sprite;
 	sf::Vector2f pos;
 	int clicked;
+	int has_moved;
 
 public:
-	piece(char newColor = '\0', sf::Vector2f newPos = sf::Vector2f(), sf::Texture newTexture = sf::Texture(),int clicked = -1);
+	piece(char newColor = '\0', sf::Vector2f newPos = sf::Vector2f(), sf::Texture newTexture = sf::Texture(),int clicked = -1, int has_moved = 0);
 	~piece();
 
 	char& getColor();

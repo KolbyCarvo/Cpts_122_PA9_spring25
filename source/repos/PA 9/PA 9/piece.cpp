@@ -1,7 +1,7 @@
 #include "piece.h"
 
 
-piece::piece(char newColor, sf::Vector2f newPos, sf::Texture newTexture, int newClicked) : color(newColor), pos(newPos), sprite(newTexture), clicked(newClicked) {}
+piece::piece(char newColor, sf::Vector2f newPos, sf::Texture newTexture, int newClicked, int newHasMoved) : color(newColor), pos(newPos), sprite(newTexture), clicked(newClicked) , has_moved(newHasMoved) {}
 
 piece::~piece()
 {
