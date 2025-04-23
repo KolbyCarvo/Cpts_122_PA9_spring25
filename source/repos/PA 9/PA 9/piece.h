@@ -26,4 +26,7 @@ public:
 	void setSprite(sf::Sprite newSprite);
 	void setClicked(int newClicked);
 
+	virtual void move(int type, int& scale) = 0;
+	virtual int determine_move(sf::Vector2f next_position, int& scale) = 0;
+
 };

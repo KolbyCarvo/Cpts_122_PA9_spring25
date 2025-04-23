@@ -7,44 +7,16 @@
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\king.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\queen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\queen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\king.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -59,16 +31,44 @@
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\king.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\pawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\queen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F03B575-15B8-440E-BAEF-9FA470BEE01E}|PA 9\\PA 9.vcxproj|solutionrelative:PA 9\\knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -88,7 +88,7 @@
               "RelativeDocumentMoniker": "PA 9\\main.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\main.cpp*",
               "RelativeToolTip": "PA 9\\main.cpp*",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAEIBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T04:33:14.659Z",
               "IsPinned": true,
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "board.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.h",
               "RelativeDocumentMoniker": "PA 9\\board.h",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "board.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\board.cpp",
               "RelativeDocumentMoniker": "PA 9\\board.cpp",
@@ -124,13 +124,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "piece.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.cpp",
               "RelativeDocumentMoniker": "PA 9\\piece.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.cpp",
               "RelativeToolTip": "PA 9\\piece.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:07:19.769Z",
               "IsPinned": true,
@@ -138,13 +138,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "piece.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.h",
               "RelativeDocumentMoniker": "PA 9\\piece.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\piece.h",
               "RelativeToolTip": "PA 9\\piece.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:15:08.41Z",
               "IsPinned": true,
@@ -152,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "pawn.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.cpp",
               "RelativeDocumentMoniker": "PA 9\\pawn.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.cpp",
               "RelativeToolTip": "PA 9\\pawn.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAADgv1cAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T20:53:52.979Z",
               "IsPinned": true,
@@ -166,16 +166,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
               "Title": "pawn.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.h",
               "RelativeDocumentMoniker": "PA 9\\pawn.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\pawn.h",
               "RelativeToolTip": "PA 9\\pawn.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:14:58.234Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -185,7 +186,7 @@
               "RelativeDocumentMoniker": "PA 9\\knight.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.cpp",
               "RelativeToolTip": "PA 9\\knight.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAADwv4MAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:13:22.422Z",
               "IsPinned": true,
@@ -193,16 +194,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "knight.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.h",
               "RelativeDocumentMoniker": "PA 9\\knight.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\knight.h",
               "RelativeToolTip": "PA 9\\knight.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:13:35.081Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -212,72 +214,77 @@
               "RelativeDocumentMoniker": "PA 9\\bishop.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\bishop.h",
               "RelativeToolTip": "PA 9\\bishop.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:14:14.752Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "bishop.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\bishop.cpp",
               "RelativeDocumentMoniker": "PA 9\\bishop.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\bishop.cpp",
               "RelativeToolTip": "PA 9\\bishop.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:11:48.085Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "rook.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\rook.h",
               "RelativeDocumentMoniker": "PA 9\\rook.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\rook.h",
               "RelativeToolTip": "PA 9\\rook.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:14:03.2Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "rook.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\rook.cpp",
               "RelativeDocumentMoniker": "PA 9\\rook.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\rook.cpp",
               "RelativeToolTip": "PA 9\\rook.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAUwF0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:11:37.533Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "queen.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.h",
               "RelativeDocumentMoniker": "PA 9\\queen.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.h",
               "RelativeToolTip": "PA 9\\queen.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:14:42.655Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "queen.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.cpp",
               "RelativeDocumentMoniker": "PA 9\\queen.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\queen.cpp",
               "RelativeToolTip": "PA 9\\queen.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAADwv58AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:12:05.66Z",
               "IsPinned": true,
@@ -285,26 +292,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "king.h",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.h",
               "RelativeDocumentMoniker": "PA 9\\king.h",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.h",
               "RelativeToolTip": "PA 9\\king.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-20T07:14:31.271Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "king.cpp",
               "DocumentMoniker": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.cpp",
               "RelativeDocumentMoniker": "PA 9\\king.cpp",
               "ToolTip": "C:\\Users\\aquat\\source\\repos\\Cpts 122\\SFML\\source\\repos\\PA 9\\PA 9\\king.cpp",
               "RelativeToolTip": "PA 9\\king.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwE0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-20T07:12:14.593Z",
               "IsPinned": true,

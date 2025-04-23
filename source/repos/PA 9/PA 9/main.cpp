@@ -6,8 +6,10 @@ int main(void)
 	unsigned int height = 906;
 
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
-	window->setFramerateLimit(30);
-	char turn = 'w';
+	window->setFramerateLimit(15);
+	char turn = 'b';
+	int temp_scale = 1;
+	piece* selected_piece = nullptr;
 	board chessboard(window);
 
 	sf::Texture white_pawn_texture, white_rook_texture, white_knight_texture, white_bishop_texture, white_queen_texture, white_king_texture;
@@ -164,7 +166,11 @@ int main(void)
 	for (int i = 0; i < 8; i++ )
 	{
 		white_pawns[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * n , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
+		white_pawns[i].setPosition(white_pawns[i].getSprite().getPosition());
+		white_pawns[i].setColor('w');
 		black_pawns[i].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * n , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f});
+		black_pawns[i].setPosition(black_pawns[i].getSprite().getPosition());
+		black_pawns[i].setColor('b');
 		n += 2;
 	}
 	n = 1;
@@ -173,19 +179,40 @@ int main(void)
 	for (int i = 0; i < 2; i++)
 	{
 		white_rooks[i].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * n, chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+		white_rooks[i].setPosition(white_rooks[i].getSprite().getPosition());
+		white_rooks[i].setColor('w');
 		white_knights[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * j , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
+		white_knights[i].setPosition(white_knights[i].getSprite().getPosition());
+		white_knights[i].setColor('w');
 		white_bishops[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * k , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+		white_bishops[i].setPosition(white_bishops[i].getSprite().getPosition());
+		white_bishops[i].setColor('w');
+
 		black_rooks[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * n, chessboard.get_board(1,1).getGeometricCenter().y });
+		black_rooks[i].setPosition(black_rooks[i].getSprite().getPosition());
+		black_rooks[i].setColor('b');
 		black_knights[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * j, chessboard.get_board(1,1).getGeometricCenter().y });
+		black_knights[i].setPosition(black_knights[i].getSprite().getPosition());
+		black_knights[i].setColor('b');
 		black_bishops[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * k, chessboard.get_board(1,1).getGeometricCenter().y });
+		black_bishops[i].setPosition(black_bishops[i].getSprite().getPosition());
+		black_bishops[i].setColor('b');
 		n = 15;
 		j = 13;
 		k = 11;
 	}
 	white_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+	white_queens.setPosition(white_queens.getSprite().getPosition());
+	white_queens.setColor('w');
 	white_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
+	white_kings.setPosition(white_kings.getSprite().getPosition());
+	white_kings.setColor('w');
 	black_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y});
+	black_queens.setPosition(black_queens.getSprite().getPosition());
+	black_queens.setColor('b');
 	black_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y});
+	black_kings.setPosition(black_kings.getSprite().getPosition());
+	black_kings.setColor('b');
 
 	while (window->isOpen())
 	{
@@ -232,6 +259,7 @@ int main(void)
 
 					if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
 					{
+						selected_piece = nullptr;
 						for (int i = 0; i < 8; i++)
 						{
 							if (white_pawns[i].getSprite().getGlobalBounds().contains(mouseWorld))
@@ -240,6 +268,7 @@ int main(void)
 
 								if (white_pawns[i].getclicked() == 1)
 								{
+									selected_piece = &white_pawns[i];
 									white_pawns[i].getSprite().setScale({ 0.7f,0.7f });
 								}
 								else if (white_pawns[i].getclicked() == -1)
@@ -256,6 +285,7 @@ int main(void)
 
 								if (white_rooks[i].getclicked() == 1)
 								{
+									selected_piece = &white_rooks[i];
 									white_rooks[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (white_rooks[i].getclicked() == -1)
@@ -269,6 +299,7 @@ int main(void)
 
 								if (white_bishops[i].getclicked() == 1)
 								{
+									selected_piece = &white_bishops[i];
 									white_bishops[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (white_bishops[i].getclicked() == -1)
@@ -282,6 +313,7 @@ int main(void)
 
 								if (white_knights[i].getclicked() == 1)
 								{
+									selected_piece = &white_knights[i];
 									white_knights[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (white_knights[i].getclicked() == -1)
@@ -295,6 +327,7 @@ int main(void)
 							white_queens.setClicked(-white_queens.getclicked());
 							if (white_queens.getclicked() == 1)
 							{
+								selected_piece = &white_queens;
 								white_queens.getSprite().setScale({ 0.7f, 0.7f });
 							}
 							else if (white_queens.getclicked() == -1)
@@ -307,6 +340,7 @@ int main(void)
 							white_kings.setClicked(-white_kings.getclicked());
 							if (white_kings.getclicked() == 1)
 							{
+								selected_piece = &white_kings;
 								white_kings.getSprite().setScale({ 0.7f, 0.7f });
 							}
 							else if (white_kings.getclicked() == -1)
@@ -338,8 +372,10 @@ int main(void)
 					black_kings.setClicked(-1);
 					black_kings.getSprite().setScale({ 0.6f, 0.6f });
 
+
 					if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
 					{
+						selected_piece = nullptr;
 						for (int i = 0; i < 8; i++)
 						{
 							if (black_pawns[i].getSprite().getGlobalBounds().contains(mouseWorld))
@@ -348,6 +384,7 @@ int main(void)
 
 								if (black_pawns[i].getclicked() == 1)
 								{
+									selected_piece = &black_pawns[i];
 									black_pawns[i].getSprite().setScale({ 0.7f,0.7f });
 								}
 								else if (black_pawns[i].getclicked() == -1)
@@ -364,6 +401,7 @@ int main(void)
 
 								if (black_rooks[i].getclicked() == 1)
 								{
+									selected_piece = &black_rooks[i];
 									black_rooks[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (black_rooks[i].getclicked() == -1)
@@ -377,6 +415,7 @@ int main(void)
 
 								if (black_bishops[i].getclicked() == 1)
 								{
+									selected_piece = &black_bishops[i];
 									black_bishops[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (black_bishops[i].getclicked() == -1)
@@ -390,6 +429,7 @@ int main(void)
 
 								if (black_knights[i].getclicked() == 1)
 								{
+									selected_piece = &black_knights[i];
 									black_knights[i].getSprite().setScale({ 0.7f, 0.7f });
 								}
 								else if (black_knights[i].getclicked() == -1)
@@ -403,6 +443,7 @@ int main(void)
 							black_queens.setClicked(-black_queens.getclicked());
 							if (black_queens.getclicked() == 1)
 							{
+								selected_piece = &black_queens;
 								black_queens.getSprite().setScale({ 0.7f, 0.7f });
 							}
 							else if (black_queens.getclicked() == -1)
@@ -415,12 +456,33 @@ int main(void)
 							black_kings.setClicked(-black_kings.getclicked());
 							if (black_kings.getclicked() == 1)
 							{
+								selected_piece = &black_kings;
 								black_kings.getSprite().setScale({ 0.7f, 0.7f });
 							}
 							else if (black_kings.getclicked() == -1)
 							{
 								black_kings.getSprite().setScale({ 0.6f, 0.6f });
 							}
+						}
+					}
+				}
+				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) 
+				{
+					std::cout << "hello" << std::endl;
+					if (selected_piece != nullptr) 
+					{
+						float squareSize = 113.0f; 
+						float x = std::floor(mouseWorld.x / squareSize) * squareSize + 56.5f;
+						float y = std::floor(mouseWorld.y / squareSize) * squareSize + 56.5f;
+						sf::Vector2f oldPos = selected_piece->getSprite().getPosition(); 
+						selected_piece->move((selected_piece->determine_move({ x , y },temp_scale)),temp_scale);
+						sf::Vector2f newPos = selected_piece->getSprite().getPosition();
+						if (oldPos != newPos)
+						{
+							turn = (turn == 'w') ? 'b' : 'w';
+							selected_piece->setClicked(-1);
+							selected_piece->getSprite().setScale({ 0.6f, 0.6f });
+							selected_piece = nullptr;
 						}
 					}
 				}

@@ -7,8 +7,8 @@ private:
 
 public:	
 
-	void move(int type, int scale);
+	void move(int type, int& scale) override;
 
-	int determine_move(sf::Vector2f next_position, int &scale);
+	int determine_move(sf::Vector2f next_position, int &scale) override;
 
 };
