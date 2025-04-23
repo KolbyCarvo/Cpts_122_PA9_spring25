@@ -5,7 +5,7 @@ int rook::checkMove() const {
 	// check if move is lateral or vertical
 	// make sure piece is not in way of movement
 	// iterate through array of available squares??
-
+	return 0;
 }
 
 void rook::move() {

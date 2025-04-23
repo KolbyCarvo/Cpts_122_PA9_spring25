@@ -1,33 +1,31 @@
-#include "position.h"
+#pragma once
+
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
 class piece {
 
-private:
+protected:
 
 	char color;
 
-	position pos;
-
-	sf::Sprite sprite;
+	sf::Vector2f pos;
 
 public:
 
-	piece();
-	piece(char newColor, position newPos, sf::Sprite newSprite);
-	~piece();
+	//piece();
+	//piece(char newColor, sf::Vector2f newPos);
+	//~piece();
 
-	char getColor() const;
-	position getPosition() const;
+	//char getColor() const;
+	//sf::Vector2f getPosition() const;
 
-	void setColor(char newColor);
-	void setPosition(position newPosition);
+	//void setColor(char newColor);
+	//void setPosition(sf::Vector2f newPosition);
 
-	void getMove() const;
+	//virtual void getMove() const = 0;
+	//virtual int checkMove() const = 0;
 
-	int checkMove() const;
+	//virtual void move() const = 0;
 
-	void move();
-
-}; #pragma once
+};

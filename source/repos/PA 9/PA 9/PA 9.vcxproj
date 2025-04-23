@@ -147,7 +147,6 @@
     <ClCompile Include="knight.cpp" />
     <ClCompile Include="pawn.cpp" />
     <ClCompile Include="piece.cpp" />
-    <ClCompile Include="position.cpp" />
     <ClCompile Include="queen.cpp" />
     <ClCompile Include="rook.cpp" />
   </ItemGroup>
@@ -158,7 +157,6 @@
     <ClInclude Include="knight.h" />
     <ClInclude Include="pawn.h" />
     <ClInclude Include="piece.h" />
-    <ClInclude Include="position.h" />
     <ClInclude Include="queen.h" />
     <ClInclude Include="rook.h" />
   </ItemGroup>

@@ -5,7 +5,8 @@ class rook : public piece {
 
 private:
 
-public:
+public:	
+
 
 	int checkMove() const;
 
