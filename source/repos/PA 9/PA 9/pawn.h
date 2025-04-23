@@ -4,12 +4,9 @@
 class pawn : public piece {
 
 private:
-
 public:
 
+	void move(int type);
 
-	/*virtual void move();
-
-	virtual int checkMove() const;*/
-
+	int determine_move(sf::Vector2f next_position);
 };

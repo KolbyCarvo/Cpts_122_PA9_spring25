@@ -8,24 +8,19 @@ class piece {
 protected:
 
 	char color;
-
+	sf::Sprite sprite;
 	sf::Vector2f pos;
 
 public:
+	piece(char newColor = '\0', sf::Vector2f newPos = sf::Vector2f(), sf::Texture newTexture = sf::Texture());
+	~piece();
 
-	//piece();
-	//piece(char newColor, sf::Vector2f newPos);
-	//~piece();
+	char& getColor();
+	sf::Vector2f& getPosition();
+	sf::Sprite& getSprite();
 
-	//char getColor() const;
-	//sf::Vector2f getPosition() const;
-
-	//void setColor(char newColor);
-	//void setPosition(sf::Vector2f newPosition);
-
-	//virtual void getMove() const = 0;
-	//virtual int checkMove() const = 0;
-
-	//virtual void move() const = 0;
+	void setColor(char newColor);
+	void setPosition(sf::Vector2f newPosition);
+	void setSprite(sf::Sprite newSprite);
 
 };

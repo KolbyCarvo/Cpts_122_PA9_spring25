@@ -7,8 +7,7 @@ private:
 
 public:
 
-	int checkMove() const;
+	void move(int type);
 
-	void move();
-
+	int determine_move(sf::Vector2f next_position);
 };
