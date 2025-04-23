@@ -6,24 +6,4 @@ C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFM
       C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,52): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,52): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,52): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,52): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,41): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,41): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,41): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,41): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(197,41): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,82): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,82): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,82): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,82): warning C4244:         ]
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,61): warning C4244:         with
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,61): warning C4244:         [
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,61): warning C4244:             T=float
-C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\PA 9\main.cpp(198,61): warning C4244:         ]
   PA 9.vcxproj -> C:\Users\aquat\source\repos\Cpts 122\SFML\source\repos\PA 9\Debug\PA 9.exe
