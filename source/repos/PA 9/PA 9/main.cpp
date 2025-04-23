@@ -2,11 +2,11 @@
 
 int main(void)
 {
-	unsigned int width = 1006;
-	unsigned int height = 1006;
+	unsigned int width = 906;
+	unsigned int height = 906;
 
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
-	window->setFramerateLimit(60);
+	window->setFramerateLimit(30);
 
 	board chessboard(window);
 
@@ -75,141 +75,117 @@ int main(void)
 		return-1;
 	}
 
-	sf::Sprite white_pawn_1(white_pawn_texture),
-		white_pawn_2(white_pawn_texture),
-		white_pawn_3(white_pawn_texture),
-		white_pawn_4(white_pawn_texture),
-		white_pawn_5(white_pawn_texture),
-		white_pawn_6(white_pawn_texture),
-		white_pawn_7(white_pawn_texture),
-		white_pawn_8(white_pawn_texture),
-		white_rook_1(white_rook_texture),
-		white_rook_2(white_rook_texture),
-		white_knight_1(white_knight_texture),
-		white_knight_2(white_knight_texture),
-		white_bishop_1(white_bishop_texture),
-		white_bishop_2(white_bishop_texture),
-		white_queen(white_queen_texture),
-		white_king(white_king_texture);
+	sf::Sprite white_pawn(white_pawn_texture), white_rook(white_rook_texture), white_knight(white_knight_texture),
+		white_bishop(white_bishop_texture), white_queen(white_queen_texture), white_king(white_king_texture);
 
-	sf::Sprite black_pawn_1(black_pawn_texture),
-		black_pawn_2(black_pawn_texture),
-		black_pawn_3(black_pawn_texture),
-		black_pawn_4(black_pawn_texture),
-		black_pawn_5(black_pawn_texture),
-		black_pawn_6(black_pawn_texture),
-		black_pawn_7(black_pawn_texture),
-		black_pawn_8(black_pawn_texture),
-		black_rook_1(black_rook_texture),
-		black_rook_2(black_rook_texture),
-		black_knight_1(black_knight_texture),
-		black_knight_2(black_knight_texture),
-		black_bishop_1(black_bishop_texture),
-		black_bishop_2(black_bishop_texture),
-		black_queen(black_queen_texture),
-		black_king(black_king_texture);
+	sf::Sprite black_pawn(black_pawn_texture), black_rook(black_rook_texture), black_knight(black_knight_texture),
+		black_bishop(black_bishop_texture), black_queen(black_queen_texture), black_king(black_king_texture);
 
-	white_pawn_1.setOrigin({ 52.5f, 64.0f });
-	white_pawn_2.setOrigin({ 52.5f, 64.0f });
-	white_pawn_3.setOrigin({ 52.5f, 64.0f });
-	white_pawn_4.setOrigin({ 52.5f, 64.0f });
-	white_pawn_5.setOrigin({ 52.5f, 64.0f });
-	white_pawn_6.setOrigin({ 52.5f, 64.0f });
-	white_pawn_7.setOrigin({ 52.5f, 64.0f });
-	white_pawn_8.setOrigin({ 52.5f, 64.0f });
-	white_rook_1.setOrigin({ 58.0f, 64.0f });
-	white_rook_2.setOrigin({ 58.0f, 64.0f });
-	white_knight_1.setOrigin({ 57.5f, 64.0f });
-	white_knight_2.setOrigin({ 57.5f, 64.0f });
-	white_bishop_1.setOrigin({ 63.5f, 64.0f });
-	white_bishop_2.setOrigin({ 63.5f, 64.0f });
+	white_pawn.setOrigin({ 52.5f, 64.0f });
+	white_rook.setOrigin({ 58.0f, 64.0f });
+	white_knight.setOrigin({ 57.5f, 64.0f });
+	white_bishop.setOrigin({ 63.5f, 64.0f });
 	white_queen.setOrigin({ 70.5f, 64.0f });
 	white_king.setOrigin({ 63.5f, 64.0f });
 
-	black_pawn_1.setOrigin({ 52.5f, 64.0f });
-	black_pawn_2.setOrigin({ 52.5f, 64.0f });
-	black_pawn_3.setOrigin({ 52.5f, 64.0f });
-	black_pawn_4.setOrigin({ 52.5f, 64.0f });
-	black_pawn_5.setOrigin({ 52.5f, 64.0f });
-	black_pawn_6.setOrigin({ 52.5f, 64.0f });
-	black_pawn_7.setOrigin({ 52.5f, 64.0f });
-	black_pawn_8.setOrigin({ 52.5f, 64.0f });
-	black_rook_1.setOrigin({ 58.0f, 64.0f });
-	black_rook_2.setOrigin({ 58.0f, 64.0f });
-	black_knight_1.setOrigin({ 57.5f, 64.0f });
-	black_knight_2.setOrigin({ 57.5f, 64.0f });
-	black_bishop_1.setOrigin({ 63.5f, 64.0f });
-	black_bishop_2.setOrigin({ 63.5f, 64.0f });
+	black_pawn.setOrigin({ 52.5f, 64.0f });
+	black_rook.setOrigin({ 58.0f, 64.0f });
+	black_knight.setOrigin({ 57.5f, 64.0f });
+	black_bishop.setOrigin({ 63.5f, 64.0f });
 	black_queen.setOrigin({ 70.5f, 64.0f });
 	black_king.setOrigin({ 63.5f, 64.0f });
 
-	white_pawn_1.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_2.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_3.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_4.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_5.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_6.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_7.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_pawn_8.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	white_rook_1.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
-	white_rook_2.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
-	white_knight_1.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
-	white_knight_2.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
-	white_bishop_1.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
-	white_bishop_2.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
+	white_pawn.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
+	white_rook.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
+	white_rook.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
+	white_knight.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
+	white_bishop.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
 	white_queen.setTextureRect(sf::IntRect({ 0, 0 }, { 141, 128 }));
 	white_king.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
 
-	black_pawn_1.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_2.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_3.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_4.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_5.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_6.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_7.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_pawn_8.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
-	black_rook_1.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
-	black_rook_2.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
-	black_knight_1.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
-	black_knight_2.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
-	black_bishop_1.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
-	black_bishop_2.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
+	black_pawn.setTextureRect(sf::IntRect({ 0, 0 }, { 105, 128 }));
+	black_rook.setTextureRect(sf::IntRect({ 0, 0 }, { 116, 128 }));
+	black_knight.setTextureRect(sf::IntRect({ 0, 0 }, { 115, 128 }));
+	black_bishop.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
 	black_queen.setTextureRect(sf::IntRect({ 0, 0 }, { 141, 128 }));
 	black_king.setTextureRect(sf::IntRect({ 0, 0 }, { 127, 128 }));
 
-	white_pawn_1.setScale({ 0.6f, 0.6f });
-	white_pawn_2.setScale({ 0.6f, 0.6f });
-	white_pawn_3.setScale({ 0.6f, 0.6f });
-	white_pawn_4.setScale({ 0.6f, 0.6f });
-	white_pawn_5.setScale({ 0.6f, 0.6f });
-	white_pawn_6.setScale({ 0.6f, 0.6f });
-	white_pawn_7.setScale({ 0.6f, 0.6f });
-	white_pawn_8.setScale({ 0.6f, 0.6f });
-	white_rook_1.setScale({ 0.6f, 0.6f });
-	white_rook_2.setScale({ 0.6f, 0.6f });
-	white_knight_1.setScale({ 0.6f, 0.6f });
-	white_knight_2.setScale({ 0.6f, 0.6f });
-	white_bishop_1.setScale({ 0.6f, 0.6f });
-	white_bishop_2.setScale({ 0.6f, 0.6f });
+	white_pawn.setScale({ 0.6f, 0.6f });
+	white_rook.setScale({ 0.6f, 0.6f });
+	white_rook.setScale({ 0.6f, 0.6f });
+	white_knight.setScale({ 0.6f, 0.6f });
+	white_knight.setScale({ 0.6f, 0.6f });
+	white_bishop.setScale({ 0.6f, 0.6f });
+	white_bishop.setScale({ 0.6f, 0.6f });
 	white_queen.setScale({ 0.6f, 0.6f });
 	white_king.setScale({ 0.6f, 0.6f });
 
-	black_pawn_1.setScale({ 0.6f, 0.6f });
-	black_pawn_2.setScale({ 0.6f, 0.6f });
-	black_pawn_3.setScale({ 0.6f, 0.6f });
-	black_pawn_4.setScale({ 0.6f, 0.6f });
-	black_pawn_5.setScale({ 0.6f, 0.6f });
-	black_pawn_6.setScale({ 0.6f, 0.6f });
-	black_pawn_7.setScale({ 0.6f, 0.6f });
-	black_pawn_8.setScale({ 0.6f, 0.6f });
-	black_rook_1.setScale({ 0.6f, 0.6f });
-	black_rook_2.setScale({ 0.6f, 0.6f });
-	black_knight_1.setScale({ 0.6f, 0.6f });
-	black_knight_2.setScale({ 0.6f, 0.6f });
-	black_bishop_1.setScale({ 0.6f, 0.6f });
-	black_bishop_2.setScale({ 0.6f, 0.6f });
+	black_pawn.setScale({ 0.6f, 0.6f });
+	black_rook.setScale({ 0.6f, 0.6f });
+	black_knight.setScale({ 0.6f, 0.6f });
+	black_bishop.setScale({ 0.6f, 0.6f });
 	black_queen.setScale({ 0.6f, 0.6f });
 	black_king.setScale({ 0.6f, 0.6f });
+
+	pawn white_pawns[8];
+	rook white_rooks[2];
+	knight white_knights[2];
+	bishop white_bishops[2];
+	queen white_queens;
+	king white_kings;
+
+	pawn black_pawns[8];
+	rook black_rooks[2];
+	knight black_knights[2];
+	bishop black_bishops[2];
+	queen black_queens;
+	king black_kings;
+
+	for (int i = 0; i < 8; i++)
+	{
+		white_pawns[i].setSprite(white_pawn);
+		black_pawns[i].setSprite(black_pawn);
+	}
+	for (int i = 0; i < 2; i++)
+	{
+		white_rooks[i].setSprite(white_rook);
+		black_rooks[i].setSprite(black_rook);
+		white_knights[i].setSprite(white_knight);
+		black_knights[i].setSprite(black_knight);
+		white_bishops[i].setSprite(white_bishop);
+		black_bishops[i].setSprite(black_bishop);
+	}
+	white_queens.setSprite(white_queen);
+	black_queens.setSprite(black_queen);
+	white_kings.setSprite(white_king);
+	black_kings.setSprite(black_king);
+
+	int n = 1;
+	for (int i = 0; i < 8; i++ )
+	{
+		white_pawns[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * n , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
+		black_pawns[i].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * n , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f});
+		n += 2;
+	}
+	n = 1;
+	int j = 3;
+	int k = 5;
+	for (int i = 0; i < 2; i++)
+	{
+		white_rooks[i].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * n, chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+		white_knights[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * j , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
+		white_bishops[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * k , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+		black_rooks[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * n, chessboard.get_board(1,1).getGeometricCenter().y });
+		black_knights[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * j, chessboard.get_board(1,1).getGeometricCenter().y });
+		black_bishops[i].getSprite().setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * k, chessboard.get_board(1,1).getGeometricCenter().y });
+		n = 15;
+		j = 13;
+		k = 11;
+	}
+	white_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+	white_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
+	black_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y});
+	black_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y});
 
 	while (window->isOpen())
 	{
@@ -230,82 +206,31 @@ int main(void)
 
 		window->clear();
 
-
 		for (int row = 0; row < 8; row++)
 		{
 			for (int col = 0; col < 8; col++)
 			{
-				window->draw(chessboard.get_board(row,col));
+				window->draw(chessboard.get_board(row, col));
 			}
 		}
-
-		white_pawn_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 3.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_3.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 5.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_4.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_5.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_6.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 11.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_7.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 13.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_pawn_8.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 15.0f , chessboard.get_board(1,1).getGeometricCenter().y * 13.0f });
-		white_rook_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_rook_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 15.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_knight_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 3.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_knight_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 13.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_bishop_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 5.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_bishop_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 11.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_queen.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-		white_king.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
-
-		black_pawn_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 3.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_3.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 5.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_4.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_5.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_6.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 11.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_7.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 13.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_pawn_8.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 15.0f , chessboard.get_board(1,1).getGeometricCenter().y * 3.0f });
-		black_rook_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_rook_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 15.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_knight_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 3.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_knight_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 13.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_bishop_1.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 5.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_bishop_2.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 11.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_queen.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-		black_king.setPosition({ chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y });
-
-		window->draw(white_pawn_1);
-		window->draw(white_pawn_2);
-		window->draw(white_pawn_3);
-		window->draw(white_pawn_4);
-		window->draw(white_pawn_5);
-		window->draw(white_pawn_6);
-		window->draw(white_pawn_7);
-		window->draw(white_pawn_8);
-		window->draw(white_rook_1);
-		window->draw(white_rook_2);
-		window->draw(white_knight_1);
-		window->draw(white_knight_2);
-		window->draw(white_bishop_1);
-		window->draw(white_bishop_2);
-		window->draw(white_queen);
-		window->draw(white_king);
-
-		window->draw(black_pawn_1);
-		window->draw(black_pawn_2);
-		window->draw(black_pawn_3);
-		window->draw(black_pawn_4);
-		window->draw(black_pawn_5);
-		window->draw(black_pawn_6);
-		window->draw(black_pawn_7);
-		window->draw(black_pawn_8);
-		window->draw(black_rook_1);
-		window->draw(black_rook_2);
-		window->draw(black_knight_1);
-		window->draw(black_knight_2);
-		window->draw(black_bishop_1);
-		window->draw(black_bishop_2);
-		window->draw(black_queen);
-		window->draw(black_king);
+		for (int i = 0; i < 8 ;i++)
+		{ 
+			window->draw(white_pawns[i].getSprite());
+			window->draw(black_pawns[i].getSprite());
+		}
+		for (int i = 0; i < 2 ;i++)
+		{
+			window->draw(white_rooks[i].getSprite());
+			window->draw(black_rooks[i].getSprite());
+			window->draw(white_knights[i].getSprite());
+			window->draw(black_knights[i].getSprite());
+			window->draw(white_bishops[i].getSprite());
+			window->draw(black_bishops[i].getSprite());
+		}
+		window->draw(white_queens.getSprite());
+		window->draw(white_kings.getSprite());
+		window->draw(black_queens.getSprite());
+		window->draw(black_kings.getSprite());
 
 		window->display();
 	}

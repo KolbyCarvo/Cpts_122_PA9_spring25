@@ -6,9 +6,8 @@ class bishop : public piece {
 private:
 
 public:
+	void move(int type, int scale);
 
-	int checkMove() const;
-
-	void move();
+	int determine_move(sf::Vector2f next_position, int& scale);
 
 };

@@ -3,8 +3,6 @@
 board::board(sf::RenderWindow* window)
 {
 	int TILE_SIZE = (window->getSize().x / 8.0f);
-
-	sf::RectangleShape board[8][8];
 	
 	for (int row = 0; row < 8; row++) {
 		for (int col = 0; col < 8; col++) {
