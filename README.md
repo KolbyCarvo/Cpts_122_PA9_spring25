@@ -8,3 +8,4 @@ piece will only move if the move is valid, to win must capture king.
 extra comment the reason pull requests only came from Kolbys branch were because we couldn't figure out what was going wrong with Jacksons git hub
 
 the link to the youtube video is 
+https://youtu.be/s5C4FJjkzj0
