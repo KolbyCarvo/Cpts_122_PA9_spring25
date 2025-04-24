@@ -1,5 +1,179 @@
 #include "rook.h"
 
+int rook::check(int (intWhiteBoard[8][8]), int (intBlackBoard[8][8]), int move, int scale)
+{
+	int x_pos = (pos.x / 113.0f);
+	int y_pos = (pos.y / 113.0f);
+
+	int temp_int = 0;
+
+	if (color == 'w')
+	{
+		switch (move)
+		{
+		case (1): //up
+			for (int i = 1; i < scale  ; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos] != 0 || intBlackBoard[y_pos - i][x_pos] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos - temp_int-1][x_pos] == 0)
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos - temp_int-1][x_pos] == 1)
+			{
+				return 0;
+			}
+
+			return 1;
+			break;
+		case (2): // down
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos] != 0 || intBlackBoard[y_pos - i][x_pos] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos + temp_int+1][x_pos] == 0)
+			{
+				return 1;
+			}
+			else if ( intWhiteBoard[y_pos + temp_int+1][x_pos] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (3): // Left
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos][x_pos - i] != 0 || intBlackBoard[y_pos][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos][x_pos - temp_int-1] == 0)
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos][x_pos - temp_int-1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (4): // Right
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos][x_pos + i] != 0 || intBlackBoard[y_pos][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos][x_pos + temp_int+1] == 0)
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos][x_pos + temp_int+1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		}
+	}
+	else if (color == 'b')
+	{
+		switch (move)
+		{
+		case (1): //up
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos] != 0 || intBlackBoard[y_pos + i][x_pos] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if ( intBlackBoard[y_pos + temp_int+1][x_pos] == 0)
+			{
+				return 1;
+			}
+			else if ( intBlackBoard[y_pos + temp_int+1][x_pos] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (2): // down
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos] != 0 || intBlackBoard[y_pos - i][x_pos] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if ( intBlackBoard[y_pos - temp_int-1][x_pos] == 0)
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos - temp_int-1][x_pos] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (3): //Left
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos][x_pos + i] != 0 || intBlackBoard[y_pos][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos][x_pos + temp_int+1] == 0)
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos][x_pos + temp_int+1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (4): //Right
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos][x_pos - i] != 0 || intBlackBoard[y_pos][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos][x_pos - temp_int-1] == 0)
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos][x_pos - temp_int-1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		}
+	}
+}
+
 void rook::move(int type, int& scale)
 {
 	if (color == 'w')

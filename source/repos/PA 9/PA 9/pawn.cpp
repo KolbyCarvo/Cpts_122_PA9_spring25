@@ -1,6 +1,117 @@
 #include "piece.h"
 #include "pawn.h"
 
+int pawn::check(int (intWhiteBoard[8][8]), int (intBlackBoard[8][8]), int move, int scale) {
+	
+	int x_pos = (pos.x / 113.0f);
+	int y_pos = (pos.y / 113.0f);
+
+	if (move == 0)
+	{
+		return 0;
+	}
+	if (color == 'w') {
+
+		switch (move)
+		{
+		case(1):
+			if (intWhiteBoard[y_pos - 1][x_pos] != 0 || intBlackBoard[y_pos - 1][x_pos] != 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		case(2):
+			if (intWhiteBoard[y_pos - 1][x_pos] != 0 || intBlackBoard[y_pos - 1][x_pos] != 0)
+			{
+				return 0;
+			}
+			else if (intWhiteBoard[y_pos - 2][x_pos] != 0 || intBlackBoard[y_pos - 2][x_pos] != 0)
+			{
+				return 0;
+			}
+			else 
+			{
+				return 1;
+			}
+			break;
+		case(3):
+			if (intBlackBoard[y_pos - 1][x_pos - 1] == 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		case(4):
+			if (intBlackBoard[y_pos - 1][x_pos + 1] == 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		}
+	}
+	else if (color == 'b')
+	{
+		switch (move)
+		{
+		case(1):
+			if (intBlackBoard[y_pos + 1][x_pos] != 0 || intWhiteBoard[y_pos + 1][x_pos] != 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		case(2):
+			if (intBlackBoard[y_pos + 1][x_pos] != 0 || intWhiteBoard[y_pos + 1][x_pos] != 0)
+			{
+				return 0;
+			}
+			else if (intBlackBoard[y_pos + 2][x_pos] != 0 || intWhiteBoard[y_pos + 2][x_pos] != 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		case(3):
+			if (intWhiteBoard[y_pos + 1][x_pos + 1] == 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		case(4):
+			if (intWhiteBoard[y_pos + 1][x_pos - 1] == 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return 1;
+			}
+			break;
+		}
+	}
+}
+
 void pawn::move(int type, int& scale)
 {
 	switch (type)
