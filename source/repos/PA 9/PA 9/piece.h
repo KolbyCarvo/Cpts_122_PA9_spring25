@@ -27,6 +27,7 @@ public:
 	void setSprite(sf::Sprite newSprite);
 	void setClicked(int newClicked);
 
+	virtual int check(int (intWhiteBoard[8][8]), int (intBlackBoard[8][8]), int move, int scale) = 0;
 	virtual void move(int type, int& scale) = 0;
 	virtual int determine_move(sf::Vector2f next_position, int& scale) = 0;
 

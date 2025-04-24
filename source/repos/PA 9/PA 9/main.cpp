@@ -5,10 +5,45 @@ int main(void)
 	unsigned int width = 906;
 	unsigned int height = 906;
 
+	std::cout << "This is a fairly regular chess game spare a few details\n" << std::endl;
+	std::cout << "White moves first, to select a piece left click, to move right click wanted square \n" << std::endl;
+	std::cout << "Unlike Standard chess you must capture the King in order to win \n" << std::endl;
+	std::cout << "press any key to continue\n" << std::endl;
+	std::cin.ignore();
+	system("cls");
+
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode({ width,height }), "Chess PA 9");
 	window->setFramerateLimit(15);
 	char turn = 'w';
-	int temp_scale = 1;
+	int temp_scale = 1, move_integer = 0;
+	int whiteBoard[8][8], blackBoard[8][8];
+
+	for (int row = 0; row < 8; row++) {
+		for (int col = 0; col < 8; col++) {
+			if (row == 0 || row == 1)
+			{
+				blackBoard[row][col] = 1;
+			}
+			else
+			{
+				blackBoard[row][col] = 0;
+			}
+		}
+	}
+
+	for (int row = 0; row < 8; row++) {
+		for (int col = 0; col < 8; col++) {
+			if (row == 6 || row == 7)
+			{
+				whiteBoard[row][col] = 1;
+			}
+			else
+			{
+				whiteBoard[row][col] = 0;
+			}
+		}
+	}
+
 	piece* selected_piece = nullptr;
 	board chessboard(window);
 
@@ -130,17 +165,17 @@ int main(void)
 	black_king.setScale({ 0.6f, 0.6f });
 
 	pawn white_pawns[8];
-	rook white_rooks[2];
-	knight white_knights[2];
-	bishop white_bishops[2];
-	queen white_queens;
+	rook white_rooks[8];
+	knight white_knights[8];
+	bishop white_bishops[8];
+	queen white_queens[8];
 	king white_kings;
 
 	pawn black_pawns[8];
-	rook black_rooks[2];
-	knight black_knights[2];
-	bishop black_bishops[2];
-	queen black_queens;
+	rook black_rooks[8];
+	knight black_knights[8];
+	bishop black_bishops[8];
+	queen black_queens[8];
 	king black_kings;
 
 	for (int i = 0; i < 8; i++)
@@ -157,8 +192,8 @@ int main(void)
 		white_bishops[i].setSprite(white_bishop);
 		black_bishops[i].setSprite(black_bishop);
 	}
-	white_queens.setSprite(white_queen);
-	black_queens.setSprite(black_queen);
+	white_queens[0].setSprite(white_queen);
+	black_queens[0].setSprite(black_queen);
 	white_kings.setSprite(white_king);
 	black_kings.setSprite(black_king);
 
@@ -201,15 +236,15 @@ int main(void)
 		j = 13;
 		k = 11;
 	}
-	white_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
-	white_queens.setPosition(white_queens.getSprite().getPosition());
-	white_queens.setColor('w');
+	white_queens[0].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f});
+	white_queens[0].setPosition(white_queens[0].getSprite().getPosition());
+	white_queens[0].setColor('w');
 	white_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y * 15.0f });
 	white_kings.setPosition(white_kings.getSprite().getPosition());
 	white_kings.setColor('w');
-	black_queens.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y});
-	black_queens.setPosition(black_queens.getSprite().getPosition());
-	black_queens.setColor('b');
+	black_queens[0].getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 7.0f , chessboard.get_board(1,1).getGeometricCenter().y});
+	black_queens[0].setPosition(black_queens[0].getSprite().getPosition());
+	black_queens[0].setColor('b');
 	black_kings.getSprite().setPosition({chessboard.get_board(1,1).getGeometricCenter().x * 9.0f , chessboard.get_board(1,1).getGeometricCenter().y});
 	black_kings.setPosition(black_kings.getSprite().getPosition());
 	black_kings.setColor('b');
@@ -251,8 +286,8 @@ int main(void)
 						white_knights[i].setClicked(-1);
 						white_knights[i].getSprite().setScale({ 0.6f, 0.6f });
 					}
-					white_queens.setClicked(-1);
-					white_queens.getSprite().setScale({ 0.6f, 0.6f });
+					white_queens[0].setClicked(-1);
+					white_queens[0].getSprite().setScale({0.6f, 0.6f});
 
 					white_kings.setClicked(-1);
 					white_kings.getSprite().setScale({ 0.6f, 0.6f });
@@ -322,17 +357,17 @@ int main(void)
 								}
 							}
 						}
-						if (white_queens.getSprite().getGlobalBounds().contains(mouseWorld))
+						if (white_queens[0].getSprite().getGlobalBounds().contains(mouseWorld))
 						{
-							white_queens.setClicked(-white_queens.getclicked());
-							if (white_queens.getclicked() == 1)
+							white_queens[0].setClicked(-white_queens[0].getclicked());
+							if (white_queens[0].getclicked() == 1)
 							{
-								selected_piece = &white_queens;
-								white_queens.getSprite().setScale({ 0.7f, 0.7f });
+								selected_piece = &white_queens[0];
+								white_queens[0].getSprite().setScale({0.7f, 0.7f});
 							}
-							else if (white_queens.getclicked() == -1)
+							else if (white_queens[0].getclicked() == -1)
 							{
-								white_queens.getSprite().setScale({ 0.6f, 0.6f });
+								white_queens[0].getSprite().setScale({0.6f, 0.6f});
 							}
 						}
 						if (white_kings.getSprite().getGlobalBounds().contains(mouseWorld))
@@ -366,8 +401,8 @@ int main(void)
 						black_knights[i].setClicked(-1);
 						black_knights[i].getSprite().setScale({ 0.6f, 0.6f });
 					}
-					black_queens.setClicked(-1);
-					black_queens.getSprite().setScale({ 0.6f, 0.6f });
+					black_queens[0].setClicked(-1);
+					black_queens[0].getSprite().setScale({0.6f, 0.6f});
 
 					black_kings.setClicked(-1);
 					black_kings.getSprite().setScale({ 0.6f, 0.6f });
@@ -438,17 +473,17 @@ int main(void)
 								}
 							}
 						}
-						if (black_queens.getSprite().getGlobalBounds().contains(mouseWorld))
+						if (black_queens[0].getSprite().getGlobalBounds().contains(mouseWorld))
 						{
-							black_queens.setClicked(-black_queens.getclicked());
-							if (black_queens.getclicked() == 1)
+							black_queens[0].setClicked(-black_queens[0].getclicked());
+							if (black_queens[0].getclicked() == 1)
 							{
-								selected_piece = &black_queens;
-								black_queens.getSprite().setScale({ 0.7f, 0.7f });
+								selected_piece = &black_queens[0];
+								black_queens[0].getSprite().setScale({0.7f, 0.7f});
 							}
-							else if (black_queens.getclicked() == -1)
+							else if (black_queens[0].getclicked() == -1)
 							{
-								black_queens.getSprite().setScale({ 0.6f, 0.6f });
+								black_queens[0].getSprite().setScale({0.6f, 0.6f});
 							}
 						}
 						if (black_kings.getSprite().getGlobalBounds().contains(mouseWorld))
@@ -468,109 +503,141 @@ int main(void)
 				}
 				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) 
 				{
-					std::cout << "hello" << std::endl;
 					if (selected_piece != nullptr) 
 					{
 						float squareSize = 113.0f; 
 						float x = std::floor(mouseWorld.x / squareSize) * squareSize + 56.5f;
 						float y = std::floor(mouseWorld.y / squareSize) * squareSize + 56.5f;
-						sf::Vector2f oldPos = selected_piece->getSprite().getPosition(); 
-						selected_piece->move((selected_piece->determine_move({ x , y },temp_scale)),temp_scale);
-						sf::Vector2f newPos = selected_piece->getSprite().getPosition();
-						if (oldPos != newPos)
+
+
+						move_integer = selected_piece->determine_move({ x , y }, temp_scale);
+
+						if (move_integer > 0)
 						{
-							turn = (turn == 'w') ? 'b' : 'w';
-							selected_piece->setClicked(-1);
-							selected_piece->getSprite().setScale({ 0.6f, 0.6f });
-							for (int i = 0; i < 8; i++)
+							if (selected_piece->check(whiteBoard, blackBoard, move_integer, temp_scale) == 1)
 							{
-								if (selected_piece->getColor() == 'w')
+								sf::Vector2f oldPos = selected_piece->getSprite().getPosition();
+								selected_piece->move(move_integer, temp_scale);
+								sf::Vector2f newPos = selected_piece->getSprite().getPosition();
+
+								if (turn == 'w')
 								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(black_pawns[i].getPosition()))
+									whiteBoard[(int)(oldPos.y / 113.0f)][(int)(oldPos.x / 113.0f)] = 0;
+									whiteBoard[(int)(newPos.y / 113.0f)][(int)(newPos.x / 113.0f)] = 1;
+
+								}
+								else if (turn == 'b')
+								{
+									blackBoard[(int)(oldPos.y / 113.0f)][(int)(oldPos.x / 113.0f)] = 0;
+									blackBoard[(int)(newPos.y / 113.0f)][(int)(newPos.x / 113.0f)] = 1;
+
+								}
+
+								turn = (turn == 'w') ? 'b' : 'w';
+
+								selected_piece->setClicked(-1);
+								selected_piece->getSprite().setScale({ 0.6f, 0.6f });
+								for (int i = 0; i < 8; i++)
+								{
+									if (selected_piece->getColor() == 'w')
 									{
-										black_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_pawns[i].setPosition({ -1000.0f, -1000.0f });
+										if (selected_piece->getSprite().getGlobalBounds().contains(black_pawns[i].getPosition()))
+										{
+											black_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_pawns[i].setPosition({ -1000.0f, -1000.0f });
+										}
+									}
+									else if (selected_piece->getColor() == 'b')
+									{
+										if (selected_piece->getSprite().getGlobalBounds().contains(white_pawns[i].getPosition()))
+										{
+											white_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_pawns[i].setPosition({ -1000.0f, -1000.0f });
+										}
 									}
 								}
-								else if (selected_piece->getColor() == 'b')
+								for (int i = 0; i < 2; i++)
 								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(white_pawns[i].getPosition()))
+									if (selected_piece->getColor() == 'w')
 									{
-										white_pawns[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_pawns[i].setPosition({ -1000.0f, -1000.0f });
+										if (selected_piece->getSprite().getGlobalBounds().contains(black_rooks[i].getPosition()))
+										{
+											black_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_rooks[i].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(black_knights[i].getPosition()))
+										{
+											black_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_knights[i].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(black_bishops[i].getPosition()))
+										{
+											black_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_bishops[i].setPosition({ -1000.0f, -1000.0f });
+										}
+									}
+									else if (selected_piece->getColor() == 'b')
+									{
+										if (selected_piece->getSprite().getGlobalBounds().contains(white_rooks[i].getPosition()))
+										{
+											white_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_rooks[i].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(white_knights[i].getPosition()))
+										{
+											white_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_knights[i].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(white_bishops[i].getPosition()))
+										{
+											white_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_bishops[i].setPosition({ -1000.0f, -1000.0f });
+										}
+									}
+									if (selected_piece->getColor() == 'w')
+									{
+										if (selected_piece->getSprite().getGlobalBounds().contains(black_queens[0].getPosition()))
+										{
+											black_queens[0].getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_queens[0].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(black_kings.getPosition()))
+										{
+											black_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
+											black_kings.setPosition({ -1000.0f, -1000.0f });
+										}
+									}
+									else if (selected_piece->getColor() == 'b')
+									{
+										if (selected_piece->getSprite().getGlobalBounds().contains(white_queens[0].getPosition()))
+										{
+											white_queens[0].getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_queens[0].setPosition({ -1000.0f, -1000.0f });
+										}
+										else if (selected_piece->getSprite().getGlobalBounds().contains(white_kings.getPosition()))
+										{
+											white_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
+											white_kings.setPosition({ -1000.0f, -1000.0f });
+										}
 									}
 								}
+								selected_piece = nullptr;
 							}
-							for (int i = 0; i < 2; i++)
+							if (white_kings.getSprite().getPosition() == sf::Vector2f(- 1000.0f, -1000.0f ))
 							{
-								if (selected_piece->getColor() == 'w')
-								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(black_rooks[i].getPosition()))
-									{
-										black_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_rooks[i].setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(black_knights[i].getPosition()))
-									{
-										black_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_knights[i].setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(black_bishops[i].getPosition()))
-									{
-										black_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_bishops[i].setPosition({ -1000.0f, -1000.0f });
-									}
-								}
-								else if (selected_piece->getColor() == 'b')
-								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(white_rooks[i].getPosition()))
-									{
-										white_rooks[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_rooks[i].setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(white_knights[i].getPosition()))
-									{
-										white_knights[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_knights[i].setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(white_bishops[i].getPosition()))
-									{
-										white_bishops[i].getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_bishops[i].setPosition({ -1000.0f, -1000.0f });
-									}
-								}
-								if (selected_piece->getColor() == 'w')
-								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(black_queens.getPosition()))
-									{
-										black_queens.getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_queens.setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(black_kings.getPosition()))
-									{
-										black_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
-										black_kings.setPosition({ -1000.0f, -1000.0f });
-									}
-								}
-								else if (selected_piece->getColor() == 'b')
-								{
-									if (selected_piece->getSprite().getGlobalBounds().contains(white_queens.getPosition()))
-									{
-										white_queens.getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_queens.setPosition({ -1000.0f, -1000.0f });
-									}
-									else if (selected_piece->getSprite().getGlobalBounds().contains(white_kings.getPosition()))
-									{
-										white_kings.getSprite().setPosition({ -1000.0f,-1000.0f });
-										white_kings.setPosition({ -1000.0f, -1000.0f });
-									}
-								}
+								window->clear();
+								window->close();
+								std::cout << "Black Wins" << std::endl;
 							}
-							selected_piece = nullptr;
+							else if (black_kings.getSprite().getPosition() == sf::Vector2f(-1000.0f, -1000.0f))
+							{
+								window->clear();
+								window->close();
+								std::cout << "White Wins" << std::endl;
+							}
 						}
 					}
 				}
-
 			}
 		}
 
@@ -597,9 +664,9 @@ int main(void)
 			window->draw(white_bishops[i].getSprite());
 			window->draw(black_bishops[i].getSprite());
 		}
-		window->draw(white_queens.getSprite());
+		window->draw(white_queens[0].getSprite());
 		window->draw(white_kings.getSprite());
-		window->draw(black_queens.getSprite());
+		window->draw(black_queens[0].getSprite());
 		window->draw(black_kings.getSprite());
 
 		window->display();

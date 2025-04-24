@@ -1,5 +1,177 @@
 #include "bishop.h"
 
+int bishop::check(int (intWhiteBoard[8][8]), int (intBlackBoard[8][8]), int move, int scale)
+{
+	int x_pos = (pos.x / 113.0f);
+	int y_pos = (pos.y / 113.0f);
+	int temp_int = 0;
+	if (color == 'w')
+	{
+		switch (move)
+		{
+		case (1): 
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos - i] != 0 || intBlackBoard[y_pos - i][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos - temp_int-1][x_pos - temp_int-1] == 0 )
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos - temp_int-1][x_pos - temp_int-1] == 1 )
+			{
+				return 0;
+			}
+
+			return 1;
+			break;
+		case (2): // Up-Right
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos + i] != 0 || intBlackBoard[y_pos - i][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos - temp_int - 1][x_pos + temp_int + 1] == 0 )
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos - temp_int - 1][x_pos + temp_int + 1] == 1 )
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (3): // Down-Left
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos - i] != 0 || intBlackBoard[y_pos + i][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos + temp_int+1][x_pos - temp_int+-1] == 0 )
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos + temp_int+1][x_pos - temp_int-1] == 1 )
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (4): // Down-Right
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos + i] != 0 || intBlackBoard[y_pos + i][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intWhiteBoard[y_pos + temp_int+1][x_pos + temp_int+1] == 0 )
+			{
+				return 1;
+			}
+			else if (intWhiteBoard[y_pos + temp_int+1][x_pos + temp_int+1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		}
+	}
+	else if (color == 'b')
+	{
+		switch (move)
+		{
+		case (1):
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos + i] != 0 || intBlackBoard[y_pos + i][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos + temp_int+1][x_pos + temp_int+1] == 0)
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos + temp_int+1][x_pos + temp_int+1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (2): // Up-Right
+			for (int i = 1; i < scale ; i++)
+			{
+				if (intWhiteBoard[y_pos + i][x_pos - i] != 0 || intBlackBoard[y_pos + i][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos + temp_int+1][x_pos - temp_int+-1] == 0 )
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos + temp_int+1][x_pos - temp_int-1] == 1 )
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (3): // Down-Left
+			for (int i = 1; i < scale; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos + i] != 0 || intBlackBoard[y_pos - i][x_pos + i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos - temp_int-1][x_pos + temp_int+1] == 0 )
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos - temp_int -1][x_pos + temp_int +1] == 1 )
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		case (4): // Down-Right
+			for (int i = 1; i < scale  ; i++)
+			{
+				if (intWhiteBoard[y_pos - i][x_pos - i] != 0 || intBlackBoard[y_pos - i][x_pos - i] != 0)
+				{
+					return 0;
+				}
+				temp_int = i;
+			}
+			if (intBlackBoard[y_pos - temp_int - 1][x_pos - temp_int -1] == 0)
+			{
+				return 1;
+			}
+			else if (intBlackBoard[y_pos - temp_int -1][x_pos - temp_int -1] == 1)
+			{
+				return 0;
+			}
+			return 1;
+			break;
+		}
+	}
+}
+
 void bishop::move(int type, int& scale)
 {
 	if (color == 'w')
